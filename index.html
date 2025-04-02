@@ -3,54 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro de alunos e notas</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
     <div class="container">
         <div class="row">
             <div class="col-12">
-                
-  
-                <label for="">  Código: </label>
-                <input type="number" class="form-control" id="campoCodigo">
-
-                <label for="">  Nome: </label>
-                <input type="text" class="form-control" id="campoNome">
+                <label for="">  Nome do aluno: </label>
+                <input type="text" class="form-control" id="campoAluno">
 
                 <label for="">Ano Nascimento: </label>
                 <input type="number" class="form-control" id="campoAno">
 
-                <button class="btn btn-primary mt-3" id="calc">Calcular</button>
+                <label for="">CPF: </label>
+                <input type="number" class="form-control" id="campoCPF">
 
-                <h1>Nome: <span id="nome"> </span></h1>
-                <h2>Idade: <span id="idade"> </span></h2>
+                <label for="">Endereço: </label>
+                <input type="text" class="form-control" id="campoEndereco">
+
+                <label for="">Telefone: </label>
+                <input type="number" class="form-control" id="campoTel">
+
+                <label for="">Número da matricula: </label>
+                <input type="number" class="form-control" id="campoNumMatricula">
+
+                <label for="">Curso: </label>
+                <input type="text" class="form-control" id="campoCurso">
+
+                <label for="">Escola: </label>
+                <input type="text" class="form-control" id="campoEscola">
+
+                <label for="">Nota 1: </label>
+                <input type="number" class="form-control" id="campoNt1">
+
+                <label for="">Nota 2: </label>
+                <input type="number" class="form-control" id="campoNt2">
+
+                <label for="">Nota 3: </label>
+                <input type="number" class="form-control" id="campoNt3">
+
+                <label for="">Nota 4: </label>
+                <input type="number" class="form-control" id="campoNt4">
+
+                <button class="btn btn-primary mt-3" id="cad">Cadastrar</button>
+                
+                <button class="btn btn-primary mt-3" id="calcmedia">Calcular média</button>
+
+                <h2>Nome: <span id="nome"> </span></h2>
+                <br>
                 <h2>Ano: <span id="ano"> </span></h2>
-                <h2>Saldo inicial: <span id="saldo"></span></h2>
-                <h2>Código: <span id="codigo"></span></h2>
-
-                <div class="row">
-                    <div class="col-6">
-                        <hr>
-                        <h3>Deposita</h3>
-                        <label for="">Deposito</label>
-                        <input type="number" class="form-control" id="campoDeposito">
-                        <button class="btn btn-primary mt-3" id="deposito">Depositar</button>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-6">
-                        <hr>
-                        <h3>Comprar</h3>
-                        <label for="">Valor da Compra</label>
-                        <input type="number" class="form-control" id="campoCompra">
-                        <button class="btn btn-primary mt-3" id="comprar">Comprar</button>
-                    </div>
-                </div>
-
-
-
+                <br>
+                <h2>Idade: <span id="idade"> </span></h2>
+                <br>
+                <h2>CPF: <span id="cpf"> </span></h2>
+                <br>
+                <h2>Endereço: <span id="end"> </span></h2>
+                <br>
+                <h2>Telefone: <span id="tel"> </span></h2>
+                <br>
+                <h2>Número da matricula: <span id="nummat"> </span></h2>
+                <br>
+                <h2>Curso: <span id="curso"> </span></h2>
+                <br>
+                <h2>Escola: <span id="escola"> </span></h2>
+                <br>
+                <br>
+                <h2>Nota 1: <span id="n1"> </span></h2>
+                <br>
+                <h2>Nota 2: <span id="n2"> </span></h2>
+                <br>
+                <h2>Nota 3: <span id="n3"> </span></h2>
+                <br>
+                <h2>Nota 4: <span id="n4"> </span></h2>
+                <br>
+                <br>
+                <h2>Média: <span id="media"> </span></h2>
             </div>
         </div>
     </div>
@@ -59,6 +87,6 @@
 
     <script src="./js/pessoa.js"></script>
     <script src="./js/main.js"></script>
-    <script src="./js/cliente.js"></script>
+    <script src="./js/aluno.js"></script>
 </body>
 </html>
